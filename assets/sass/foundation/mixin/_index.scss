@@ -1,0 +1,35 @@
+
+@charset "UTF-8";
+
+@function rem($fz){
+  @return $fz / 16 * 1rem;
+}
+
+
+// SP→PC
+$breakpoints: (
+  'sp': 'screen and (min-width: 600px)',
+  'tab': 'screen and (min-width: 768px)',
+  'pc': 'screen and (min-width: 1024px)',
+  'lpc': 'screen and (min-width: 1400px)',
+) !default;
+
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// PC→SP
+$breakpoints-down: (
+  'sp': 'screen and (max-width: 600px)',
+  'tab': 'screen and (max-width: 768px)',
+  'pc': 'screen and (max-width: 1024px)',
+  'lpc': 'screen and (max-width: 1440px)',
+) !default;
+
+@mixin mqdown($breakpoint: tab) {
+  @media #{map-get($breakpoints-down, $breakpoint)} {
+    @content;
+  }
+}

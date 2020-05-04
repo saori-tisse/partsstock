@@ -1,0 +1,11 @@
+import Prism from 'prismjs'
+import 'clipboard/dist/clipboard.js'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.min.js'
+import 'prismjs/plugins/show-language/prism-show-language.min.js'
+import 'prismjs/plugins/toolbar/prism-toolbar.min.js'
+import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js'
+import 'prismjs/plugins/toolbar/prism-toolbar.css'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+import 'prismjs/themes/prism.css'
+import 'prismjs/themes/prism-okaidia.css'
+export default Prism

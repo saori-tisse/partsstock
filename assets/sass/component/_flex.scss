@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.c-flex{
+  display: flex;
+  flex-wrap: wrap;
+
+  &.-spacebetween{
+    justify-content: space-between;
+  }
+
+  &.-alignCenter{
+    align-items: center;
+  }
+}
