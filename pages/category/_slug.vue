@@ -8,9 +8,6 @@
         <nuxt-link :to="'/parts/' + item.id">
           <article class="c-card parts-card">
             <h3 class="title">{{ item.title }}</h3>
-            <figure class="img">
-              <img src alt />
-            </figure>
           </article>
         </nuxt-link>
       </div>
