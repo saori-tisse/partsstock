@@ -63,8 +63,8 @@ export default {
    * env
    */
   env: {
-    API_KEY,
-    API_URL
+    API_KEY: process.env.API_KEY,
+    API_URL: process.env.API_URL
   },
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
