@@ -6,27 +6,12 @@
           <nuxt-link :to="'/category/heading/'">見出し</nuxt-link>
         </li>
       </ul>
-
-      <!-- <div v-for="item in items">
-        <p>{{ item.name }}</p>
-      </div>-->
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  computed: {
-    items() {
-      return this.$store.state.items;
-    }
-  },
-  methods: {
-    fetch() {
-      return this.$store.dispatch("fetchItems");
-    }
-  }
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

@@ -103,7 +103,7 @@ export default {
     routes() {
       let parts = axios
         .get(process.env.API_URL + 'parts/', {
-          headers: { 'X-API-KEY': "1b6821fb-e114-4ed2-badd-35487886f83f" }
+          headers: { 'X-API-KEY': process.env.API_KEY }
         })
         .then(res => {
           return res.data.contents.map(part => {
@@ -112,7 +112,7 @@ export default {
         });
       let posts = axios
         .get(process.env.API_URL + 'category/', {
-          headers: { 'X-API-KEY': "1b6821fb-e114-4ed2-badd-35487886f83f" }
+          headers: { 'X-API-KEY': process.env.API_KEY }
         })
         .then(res => {
           return res.data.contents.map(post => {
