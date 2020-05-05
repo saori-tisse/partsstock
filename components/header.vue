@@ -3,12 +3,14 @@
     <div class="wrap">
       <div class="c-flex -spacebetween -alignCenter">
         <p class="logo">
-          <nuxt-link :to="'/'">parts-stock</nuxt-link>
+          <nuxt-link :to="'/'">
+            <img src="~/assets/img/common/logo.svg" alt="parts-stock" />
+          </nuxt-link>
         </p>
         <div class="header-buttonwrap">
-          <button class="btn-search">
+          <!-- <button class="btn-search">
             <i class="fas fa-search"></i>
-          </button>
+          </button>-->
           <button
             class="button-hamburger js-button-hamburger"
             aria-controls="globalnav"
@@ -31,7 +33,7 @@
       >
         <ul class="globalnav_list">
           <li>
-            <nuxt-link :to="'/category/'">パーツ</nuxt-link>
+            <nuxt-link :to="'/'">パーツ</nuxt-link>
           </li>
           <!-- <li>便利ツール</li> -->
           <li>
@@ -55,8 +57,15 @@ export default {
 <style lang="scss" scoped>
 .header {
   overflow: hidden;
+  padding: rem(10) 0;
   .wrap {
     position: relative;
+  }
+}
+
+.logo {
+  img[src$=".svg"] {
+    height: rem(30);
   }
 }
 

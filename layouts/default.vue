@@ -7,12 +7,6 @@
 </template>
 
 <style lang="scss">
-.sec {
-  padding-top: rem(70);
-  + * {
-    margin-top: rem(100);
-  }
-}
 </style>
 
 <script>

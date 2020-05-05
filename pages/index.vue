@@ -26,7 +26,19 @@
       </h2>
       <p class="top-about_text">
         parts-stockは、簡単にコピペできるWebパーツを集めたサイトです。
-        <br />こんなのが欲しいなどあれば、お気軽にご要望送って下さい！
+        <br />コーディングでここどうやるんだっけな、とか
+        <br />デザインの参考に、、、と自由にお使いいただけます！
+      </p>
+    </section>
+    <section class="sec top-menseki">
+      <h2 class="heading-primary">
+        <span class="balloon">免責事項</span>
+      </h2>
+      <p class="top-about_text">
+        ・ここのサイトにのっているコードは自由にコピー、使用していただいて構いません。
+        <br />・すべての環境で同一の表示となるわけではありませんのでご了承ください。
+        <br />・コードを使っていただくのは自由ですが、
+        <br />使用したことで何かトラブルが発生しても管理人の私は責任を一切負わないことをご了承ください。
       </p>
     </section>
   </div>
@@ -41,6 +53,9 @@ export default {
   components: {
     Logo,
     Search
+  },
+  fetch({ store }) {
+    store.commit("resetMenu");
   },
   data() {
     return {

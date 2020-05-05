@@ -21,6 +21,9 @@ import axios from "axios";
 
 export default {
   layout: "page",
+  fetch({ store }) {
+    store.commit("resetMenu");
+  },
   data() {
     return {
       items: []

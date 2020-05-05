@@ -10,9 +10,7 @@
 <style lang="scss">
 .sec {
   padding-top: rem(70);
-  + * {
-    margin-top: rem(100);
-  }
+  padding-bottom: rem(35);
 }
 </style>
 

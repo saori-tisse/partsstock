@@ -36,7 +36,6 @@ import Prism from "~/plugins/prism";
 export default {
   layout: "page",
   async asyncData({ params }) {
-    console.log(params.id);
     const { data } = await axios.get(
       process.env.API_URL + `parts/${params.id}`,
       {

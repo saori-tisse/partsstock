@@ -1,7 +1,4 @@
 require('dotenv').config();
-// import axios from "axios";
-// const axios = require("axios");
-// import axios from 'axios';
 const axios = require("axios");
 const { API_KEY, API_URL } = process.env;
 
