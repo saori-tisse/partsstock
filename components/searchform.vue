@@ -1,5 +1,5 @@
 <template>
-  <form action="#" method="get" class="search-form form">
+  <form action="/search/" method="get" class="search-form form">
     <label class="search-form_input">
       <input type="text" name="keyword" id="keyword" class="form_input" placeholder="キーワードを入力" />
       <button type="submit" class="form_submit">
