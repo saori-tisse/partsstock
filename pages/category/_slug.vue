@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <h1 class="heading-primary">
-      <span class="balloon">{{ this.$route.params.slug }}</span>
+      <span class="balloon">{{ $route.params.slug }}</span>
     </h1>
     <div class="card-list c-flex">
       <div v-for="item in postFilter" class="card-list_item">
@@ -30,6 +30,14 @@ export default {
     };
   },
   async asyncData({ params }) {
+    console.log(params.slug);
+    // const { category } = await axios.get(
+    //   process.env.API_URL + "category?filters=slug[equals]" + params.slug,
+    //   {
+    //     headers: { "X-API-KEY": process.env.API_KEY }
+    //   }
+    // );
+    // console.log(category);
     const { data } = await axios.get(process.env.API_URL + "parts/", {
       headers: { "X-API-KEY": process.env.API_KEY }
     });
@@ -42,6 +50,9 @@ export default {
       return this.items.filter(function(el) {
         return el.category.slug == this.$route.params.slug;
       }, this);
+    },
+    limitCount() {
+      return this.category.slice(0, 1);
     }
   }
 };
