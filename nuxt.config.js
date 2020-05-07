@@ -17,6 +17,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/css/all.min.css' }
+    ],
+    script: [
+      {
+        'data-ad-client': "ca-pub-6385292737893565", src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      }
     ]
   },
   /*
