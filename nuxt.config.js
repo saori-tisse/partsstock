@@ -17,7 +17,9 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://parts-stock.site/' },
       { hid: 'og:title', property: 'og:title', content: 'parts stock' },
-      { hid: 'og:description', property: 'og:description', content: '共通ディスクリプション' },
+      {
+        hid: 'og:description', property: 'og:description', content: 'parts-stockは、簡単にコピペできるWebパーツを集めたサイトです。コーディングでここどうやるんだっけな、とかデザインの参考に、、、と自由にお使いいただけます！'
+      },
       { hid: 'og:image', property: 'og:image', content: 'https://parts-stock.site/img/ogp.png' },
     ],
     link: [
