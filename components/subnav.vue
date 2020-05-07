@@ -5,6 +5,15 @@
         <li>
           <nuxt-link :to="'/category/heading/'">見出し</nuxt-link>
         </li>
+        <li>
+          <nuxt-link :to="'/category/hamburger/'">ハンバーガーボタン</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="'/category/button/'">ボタン</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="'/category/list/'">リスト</nuxt-link>
+        </li>
       </ul>
     </div>
   </div>

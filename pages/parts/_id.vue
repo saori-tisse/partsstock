@@ -25,6 +25,7 @@
       </div>
     </article>
     <style v-html="item.css"></style>
+    <script v-html="item.javascript"></script>
   </div>
 </template>
 
