@@ -1,7 +1,7 @@
 {
-  "name": "parts-stock-new",
+  "name": "parts-stock",
   "version": "1.0.0",
-  "description": "My magnificent Nuxt.js project",
+  "description": "HTML、CSSのコーディングでよく使う見出しやリストといったパーツのスニペット集です。簡単にコピーできて使うことができます！",
   "author": "saori-tisse",
   "private": true,
   "scripts": {
