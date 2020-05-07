@@ -49,7 +49,14 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     '@nuxtjs/markdownit',
+    '@nuxtjs/google-analytics'
   ],
+  'google-adsense': {
+    id: 'ca-pub-6385292737893565'
+  },
+  googleAnalytics: {
+    id: 'UA-121786791-5'
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
