@@ -20,6 +20,7 @@
         </div>
       </div>
     </section>
+    <News />
     <section class="sec top-about">
       <h2 class="heading-primary">
         <span class="balloon">parts-stock はこんなサイト</span>
@@ -47,12 +48,14 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import Search from "~/components/searchform.vue";
+import News from "~/components/news.vue";
 import axios from "axios";
 
 export default {
   components: {
     Logo,
-    Search
+    Search,
+    News
   },
   fetch({ store }) {
     store.commit("resetMenu");
