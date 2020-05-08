@@ -7,6 +7,10 @@
       <div v-for="item in postFilter" class="card-list_item">
         <nuxt-link :to="'/parts/' + item.id">
           <article class="c-card parts-card">
+            <div v-if="item.poster">
+              <img :src="item.poster.url" :alt="item.title" />
+            </div>
+            <!-- <img :src="item.poster.url"></img> -->
             <h3 class="title">{{ item.title }}</h3>
           </article>
         </nuxt-link>
@@ -51,8 +55,11 @@ export default {
         return el.category.slug == this.$route.params.slug;
       }, this);
     },
-    limitCount() {
+    limitCount: function() {
       return this.category.slice(0, 1);
+    },
+    imageDisp: function() {
+      return this.item.poster.length ? this.item.poster[0].image.url : "";
     }
   }
 };
@@ -95,6 +102,7 @@ export default {
     box-shadow: 0 5px 10px 7px rgba($color-main, 0.46);
   }
   .title {
+    font-size: rem(16);
     + * {
       margin-top: rem(16);
     }
