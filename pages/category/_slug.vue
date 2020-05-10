@@ -73,6 +73,7 @@ export default {
 .card-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: rem(40);
   a {
     display: block;
   }
@@ -80,6 +81,9 @@ export default {
     width: calc(25% - 24px);
     @include mqdown(sp) {
       width: 100%;
+    }
+    &:nth-child(n + 5) {
+      margin-top: rem(24);
     }
   }
 }
