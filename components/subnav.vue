@@ -15,12 +15,25 @@
           <nuxt-link :to="'/category/list/'">リスト</nuxt-link>
         </li>
       </ul>
+      <!-- <div v-for="category in categories">
+        <p>{{category.slug}}</p>
+      </div>-->
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { mapGetters } from "vuex";
+export default {
+  computed: {
+    categories: function() {
+      return this.$store.state.categories;
+    }
+  },
+  mounted() {
+    this.$store.dispatch("fetchCategories");
+  }
+};
 </script>
 
 <style lang="scss" scoped>
