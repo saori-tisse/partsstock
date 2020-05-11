@@ -3,6 +3,9 @@
     <div class="ads">
       <adsbygoogle :ad-slot="9531046294" :ad-style="{ display: 'block' }" :ad-format="'auto'" />
     </div>
+    <nav class="footer-nav">
+      <nuxt-link :to="'privacy/'">プライバシーポリシー</nuxt-link>
+    </nav>
     <p class="copyright">
       <small>
         &copy; 2020
@@ -13,6 +16,15 @@
 </template>
 
 <style lang="scss" scoped>
+.footer {
+  &-nav {
+    text-align: center;
+    font-size: rem(14);
+    + * {
+      margin-top: rem(40);
+    }
+  }
+}
 .ads {
   text-align: center;
   background: $color-bg;

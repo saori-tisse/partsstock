@@ -72,6 +72,10 @@ body{
 
 a{
   text-decoration: none;
+  color: $color-text;
+  &:hover{
+    color: $color-main;
+  }
 }
 
 img{

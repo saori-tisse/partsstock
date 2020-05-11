@@ -39,6 +39,9 @@
           <li>
             <nuxt-link :to="'/about/'">このサイトについて</nuxt-link>
           </li>
+          <li>
+            <nuxt-link :to="'/privacy/'">プライバシーポリシー</nuxt-link>
+          </li>
         </ul>
       </nav>
       <!-- /#globalnav.l-globalnav globalnav -->
