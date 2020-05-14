@@ -12,8 +12,11 @@
           <nuxt-link :to="'/category/button/'">ボタン</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/category/list/'">リスト</nuxt-link>
+          <nuxt-link :to="'/category/link/'">リンク</nuxt-link>
         </li>
+        <!-- <li>
+          <nuxt-link :to="'/category/list/'">リスト</nuxt-link>
+        </li>-->
       </ul>
       <!-- <div v-for="category in categories">
         <p>{{category.slug}}</p>
