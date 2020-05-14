@@ -1,8 +1,18 @@
 <template>
   <footer class="l-footer footer" id="footer">
-    <div class="ads">
-      <adsbygoogle :ad-slot="9531046294" :ad-style="{ display: 'block' }" :ad-format="'auto'" />
-    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 記事下広告１ -->
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-6385292737893565"
+      data-ad-slot="9531046294"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
     <nav class="footer-nav">
       <nuxt-link :to="'privacy/'">プライバシーポリシー</nuxt-link>
     </nav>
